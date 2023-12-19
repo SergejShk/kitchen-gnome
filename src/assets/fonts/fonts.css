@@ -1,0 +1,107 @@
+/* SFProText-400 */
+@font-face {
+    font-family: 'SF Pro Text'; 
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./SFProText/SFProText-Regular.ttf');
+}
+
+/* SFProText-500 */
+@font-face {
+    font-family: 'SF Pro Text'; 
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./SFProText/SFProText-Medium.ttf');
+}
+
+/* SFProText-600 */
+@font-face {
+    font-family: 'SF Pro Text'; 
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./SFProText/SFProText-SemiBold.ttf');
+}
+
+/* SFProText-700 */
+@font-face {
+    font-family: 'SF Pro Text'; 
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./SFProText/SFProText-Bold.ttf');
+}
+
+/* Avenir-300 */
+@font-face {
+    font-family: 'Avenir'; 
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./Avenir/Avenir-Light.ttf');
+}
+
+/* Avenir-400 */
+@font-face {
+    font-family: 'Avenir'; 
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./Avenir/Avenir-Regular.ttf');
+}
+
+/* Avenir-500 */
+@font-face {
+    font-family: 'Avenir'; 
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./Avenir/Avenir-Medium.ttf');
+}
+
+/* Avenir-800 */
+@font-face {
+    font-family: 'Avenir'; 
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./Avenir/Avenir-Heavy.ttf');
+}
+
+/* AbhayaLibre-700 */
+@font-face {
+    font-family: 'Abhaya Libre'; 
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./AbhayaLibre/AbhayaLibre-Bold.ttf');
+}
+
+/* Poppins-400 */
+@font-face {
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./Poppins/Poppins-Regular.ttf');
+}
+
+/* Poppins-600 */
+@font-face {
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./Poppins/Poppins-SemiBold.ttf');
+}
+
+/* Poppins-900 */
+@font-face {
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('./Poppins/Poppins-Black.ttf');
+}
