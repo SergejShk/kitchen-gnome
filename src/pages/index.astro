@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/Header/Header";
+import Home from "../components/Home/Home.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Header client:load />
+    <Home />
+  </main>
+</Layout>
