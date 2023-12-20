@@ -6,8 +6,16 @@ import Home from "../components/Home/Home.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <Header client:load />
-    <Home />
-  </main>
+	<Header client:load />
+
+	<main>
+		<Home />
+	</main>
 </Layout>
+<style>
+	main {
+		width: 375px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+</style>

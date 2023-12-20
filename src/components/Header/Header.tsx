@@ -1,19 +1,33 @@
 import { useState, type FC } from "react";
 
-import s from './header.module.css';
+import MobileMenu from "../MobileMenu/MobileMenu";
 
-const Header:FC = () => {
-const [isMenuOpen, setIsMenuOpen] = useState(false)
+import s from "./header.module.css";
 
-const onBurgerMenClick = () => {setIsMenuOpen(prev => !prev)}
+const Header: FC = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return (
-    <header className={s.header}>
-      <a className={s.headerLogo} href="/">Kitchen Gnome</a>
-    
-      <button className={isMenuOpen ? s.burgerMenu : s.isBurgerMenuOpen} type="button" onClick={onBurgerMenClick}></button>
-    </header>
-  );
-}
+	const onBurgerMenClick = () => {
+		setIsMenuOpen((prev) => !prev);
+	};
+
+	return (
+		<>
+			<header className={s.header}>
+				<a className={s.headerLogo} href="/">
+					Kitchen Gnome
+				</a>
+
+				<button
+					className={isMenuOpen ? s.burgerMenu : s.isBurgerMenuOpen}
+					type="button"
+					onClick={onBurgerMenClick}
+				></button>
+			</header>
+
+			<MobileMenu isMenuOpen={isMenuOpen} />
+		</>
+	);
+};
 
 export default Header;
