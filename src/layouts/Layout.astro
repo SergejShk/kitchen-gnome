@@ -1,177 +1,181 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="icons/logo-main.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Kitchen Gnome</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="icons/logo-main.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kitchen Gnome</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	/* SFProText-400 */
-	@font-face {
-		font-family: "SF Pro Text";
-		font-style: normal;
-		font-weight: 400;
-		font-display: swap;
-		src: url("/fonts/SFProText/SFProText-Regular.ttf");
-	}
+  /* SFProText-400 */
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/SFProText/SFProText-Regular.ttf");
+  }
 
-	/* SFProText-500 */
-	@font-face {
-		font-family: "SF Pro Text";
-		font-style: normal;
-		font-weight: 500;
-		font-display: swap;
-		src: url("/fonts/SFProText/SFProText-Medium.ttf");
-	}
+  /* SFProText-500 */
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/SFProText/SFProText-Medium.ttf");
+  }
 
-	/* SFProText-600 */
-	@font-face {
-		font-family: "SF Pro Text";
-		font-style: normal;
-		font-weight: 600;
-		font-display: swap;
-		src: url("/fonts/SFProText/SFProText-SemiBold.ttf");
-	}
+  /* SFProText-600 */
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/SFProText/SFProText-SemiBold.ttf");
+  }
 
-	/* SFProText-700 */
-	@font-face {
-		font-family: "SF Pro Text";
-		font-style: normal;
-		font-weight: 700;
-		font-display: swap;
-		src: url("/fonts/SFProText/SFProText-Bold.ttf");
-	}
+  /* SFProText-700 */
+  @font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/SFProText/SFProText-Bold.ttf");
+  }
 
-	/* Avenir-300 */
-	@font-face {
-		font-family: "Avenir";
-		font-style: normal;
-		font-weight: 300;
-		font-display: swap;
-		src: url("/fonts/Avenir/Avenir-Light.ttf");
-	}
+  /* Avenir-300 */
+  @font-face {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/Avenir/Avenir-Light.ttf");
+  }
 
-	/* Avenir-400 */
-	@font-face {
-		font-family: "Avenir";
-		font-style: normal;
-		font-weight: 400;
-		font-display: swap;
-		src: url("/fonts/Avenir/Avenir-Regular.ttf");
-	}
+  /* Avenir-400 */
+  @font-face {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Avenir/Avenir-Regular.ttf");
+  }
 
-	/* Avenir-500 */
-	@font-face {
-		font-family: "Avenir";
-		font-style: normal;
-		font-weight: 500;
-		font-display: swap;
-		src: url("/fonts/Avenir/Avenir-Medium.ttf");
-	}
+  /* Avenir-500 */
+  @font-face {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/Avenir/Avenir-Medium.ttf");
+  }
 
-	/* Avenir-800 */
-	@font-face {
-		font-family: "Avenir";
-		font-style: normal;
-		font-weight: 800;
-		font-display: swap;
-		src: url("/fonts/Avenir/Avenir-Heavy.ttf");
-	}
+  /* Avenir-800 */
+  @font-face {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/Avenir/Avenir-Heavy.ttf");
+  }
 
-	/* AbhayaLibre-700 */
-	@font-face {
-		font-family: "Abhaya Libre";
-		font-style: normal;
-		font-weight: 700;
-		font-display: swap;
-		src: url("/fonts/AbhayaLibre/AbhayaLibre-Bold.ttf");
-	}
+  /* AbhayaLibre-700 */
+  @font-face {
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/AbhayaLibre/AbhayaLibre-Bold.ttf");
+  }
 
-	/* Poppins-400 */
-	@font-face {
-		font-family: "Poppins";
-		font-style: normal;
-		font-weight: 400;
-		font-display: swap;
-		src: url("/fonts/Poppins/Poppins-Regular.ttf");
-	}
+  /* Poppins-400 */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+  }
 
-	/* Poppins-600 */
-	@font-face {
-		font-family: "Poppins";
-		font-style: normal;
-		font-weight: 600;
-		font-display: swap;
-		src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
-	}
+  /* Poppins-600 */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+  }
 
-	/* Poppins-900 */
-	@font-face {
-		font-family: "Poppins";
-		font-style: normal;
-		font-weight: 900;
-		font-display: swap;
-		src: url("/fonts/Poppins/Poppins-Black.ttf");
-	}
+  /* Poppins-900 */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/Poppins/Poppins-Black.ttf");
+  }
 
-	:root {
-		font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-		line-height: 1.5;
-		font-weight: 400;
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-		font-synthesis: none;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-	body {
-		margin: 0;
-		min-width: 320px;
-		min-height: calc(100vh - 70px);
-		background-color: #fff;
-	}
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+  }
 
-	a {
-		text-decoration: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
+  .no-scroll {
+    overflow: hidden;
+  }
 
-	img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
+  a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
 
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
-	button {
-		border: none;
-		font-family: inherit;
-		cursor: pointer;
-		padding: 0;
-		background-color: transparent;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
-		margin: 0;
-	}
+  button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
 </style>

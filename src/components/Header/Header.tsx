@@ -1,4 +1,4 @@
-import { useState, type FC } from "react";
+import { useState, useEffect, type FC } from "react";
 
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "../MobileMenu/MobileMenu";
@@ -12,24 +12,31 @@ const Header: FC = () => {
 		setIsMenuOpen((prev) => !prev);
 	};
 
+	useEffect(() => {
+		const body = document.querySelector('body');
+
+		isMenuOpen ? body.classList.add('no-scroll') : body.classList.remove('no-scroll');
+	},[isMenuOpen])
+
 	return (
 		<>
-			<header className={s.header}>	
-				<a className={s.headerLogo} href="/">
-					<img className={s.logo} src='/icons/logo-black.svg' alt="logo"/>
-					Kitchen Gnome
-				</a>
+			<header className={s.header}>
+				<div className={s.headerWrapper}>
+					<a className={s.headerLogo} href="/">
+						<img className={s.logo} src='/icons/logo-black.svg' alt="logo"/>
+						Kitchen Gnome
+					</a>
 
-				<Navigation />
+					<Navigation />
 
-				<button
-					className={isMenuOpen ? s.isBurgerMenuOpen : s.burgerMenu}
-					type="button"
-					onClick={onBurgerMenClick}
-				></button>
+					<button
+						className={isMenuOpen ? s.isBurgerMenuOpen : s.burgerMenu}
+						type="button"
+						onClick={onBurgerMenClick}
+					></button>
+				</div>
+				<MobileMenu isMenuOpen={isMenuOpen} />
 			</header>
-
-			<MobileMenu isMenuOpen={isMenuOpen} />
 		</>
 	);
 };

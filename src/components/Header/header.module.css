@@ -4,6 +4,15 @@
     left: 50%;
     z-index: 11;
     transform: translateX(-50%);
+    height: 70px;
+}
+
+.headerWrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 11;
+    transform: translateX(-50%);
     height: calc(70px - 34px);
     width: calc(375px - 41px);
     background-color: #fff;
@@ -13,7 +22,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-	.header {
+	.headerWrapper {
 		width: calc(1440px - 128px);
         padding: 46px 64px 45px;
         height: calc(145px - 91px);
