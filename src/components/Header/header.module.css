@@ -20,19 +20,6 @@
 	}
 }
 
-.logoWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-@media screen and (min-width: 1440px) {
-	.logoWrapper {
-        gap: 8px;
-	}
-}
-
 .headerLogo {
     color: #040404;
     font-family: Avenir;
@@ -40,11 +27,16 @@
     font-style: normal;
     font-weight: 800;
     line-height: 135%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
 @media screen and (min-width: 1440px) {
 	.headerLogo {
 		font-size: 24px;
+        gap: 8px;
 	}
 }
 

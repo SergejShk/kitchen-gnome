@@ -15,12 +15,10 @@ const Header: FC = () => {
 	return (
 		<>
 			<header className={s.header}>	
-				<div className={s.logoWrapper}>
+				<a className={s.headerLogo} href="/">
 					<img className={s.logo} src='/icons/logo-black.svg' alt="logo"/>
-					<a className={s.headerLogo} href="/">
-						Kitchen Gnome
-					</a>
-				</div>
+					Kitchen Gnome
+				</a>
 
 				<Navigation />
 

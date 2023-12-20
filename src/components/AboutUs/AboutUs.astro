@@ -29,8 +29,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 70px);
     overflow: hidden;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .about--section {
+      flex-direction: row-reverse;
+      height: 800px;
+    }
   }
 
   .about__image {
@@ -39,12 +45,27 @@
     height: 390px;
   }
 
+  @media screen and (min-width: 1440px) {
+    .about__image {
+      width: 735px;
+      height: 800px;
+    }
+  }
+
   .about__descriptionBlock {
     width: calc(100% - 36px);
     display: flex;
     flex-direction: column;
     background-color: #040404;
     padding: 48px 16px 50px 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .about__descriptionBlock {
+      width: calc(50% - 141px);
+      padding: 200px 77px 0 64px;
+      height: calc(100% - 200px);
+    }
   }
 
   .about__decor {
@@ -63,6 +84,13 @@
     margin: 24px 0 17px;
   }
 
+  @media screen and (min-width: 1440px) {
+    .about__title {
+      font-size: 64px;
+      margin: 32px 0 24px;
+    }
+  }
+
   .about__description {
     font-family: Avenir;
     font-size: 16px;
@@ -73,6 +101,13 @@
     margin: 0 0 32px;
   }
 
+  @media screen and (min-width: 1440px) {
+    .about__description {
+      font-size: 20px;
+      margin: 0 0 48px;
+    }
+  }
+
   .about--appstore {
     width: 143px;
     height: 48px;
@@ -81,5 +116,12 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .about--appstore {
+      width: 204px;
+      height: 52px;
+    }
   }
 </style>
