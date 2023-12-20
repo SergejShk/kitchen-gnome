@@ -5,30 +5,60 @@
     z-index: 11;
     transform: translateX(-50%);
     height: calc(70px - 34px);
-    width: calc(375px - 43px);
+    width: calc(375px - 41px);
     background-color: #fff;
     display: flex;
     align-items: center;
     padding: 17px 23px 17px 20px;
 }
 
-.headerLogo {
+@media screen and (min-width: 1440px) {
+	.header {
+		width: calc(1440px - 128px);
+        padding: 46px 64px 45px;
+        height: calc(145px - 91px);
+	}
+}
+
+.logoWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 145px;
-    height: 36px;
-    background-image: url("/icons/logo-black.svg");
-    background-size: auto;
-    background-position: left center;
-    background-repeat: no-repeat;
+    gap: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+	.logoWrapper {
+        gap: 8px;
+	}
+}
+
+.headerLogo {
     color: #040404;
     font-family: Avenir;
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: 135%;
-    padding: 0 0 0 48px;
+}
+
+@media screen and (min-width: 1440px) {
+	.headerLogo {
+		font-size: 24px;
+	}
+}
+
+.logo {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+@media screen and (min-width: 1440px) {
+	.logo {
+		width: 54px;
+        height: 54px;
+	}
 }
 
 .burgerMenu {
@@ -42,6 +72,19 @@
     background-position: left center;
     background-repeat: no-repeat;
     margin-left: auto;
+}
+
+@media screen and (min-width: 1440px) {
+	.burgerMenu {
+		height: 1px;
+        width: 1px;
+        position: absolute;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+	}
 }
 
 .isBurgerMenuOpen {

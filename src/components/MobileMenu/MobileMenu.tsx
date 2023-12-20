@@ -1,23 +1,6 @@
-import s from "./mobileMenu.module.css";
+import { navItems } from '../../utils/constants';
 
-const navItems = [
-	{
-		name: "Features",
-		link: "#features",
-	},
-	{
-		name: "Feedbacks",
-		link: "#feedbacks",
-	},
-	{
-		name: "Contact",
-		link: "#contact",
-	},
-	{
-		name: "Blog Story",
-		link: "#blog-story",
-	},
-];
+import s from "./mobileMenu.module.css";
 
 interface IProps {
 	isMenuOpen: boolean;

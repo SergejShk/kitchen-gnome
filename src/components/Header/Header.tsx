@@ -1,5 +1,6 @@
 import { useState, type FC } from "react";
 
+import Navigation from "../Navigation/Navigation";
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 import s from "./header.module.css";
@@ -13,13 +14,18 @@ const Header: FC = () => {
 
 	return (
 		<>
-			<header className={s.header}>
-				<a className={s.headerLogo} href="/">
-					Kitchen Gnome
-				</a>
+			<header className={s.header}>	
+				<div className={s.logoWrapper}>
+					<img className={s.logo} src='/icons/logo-black.svg' alt="logo"/>
+					<a className={s.headerLogo} href="/">
+						Kitchen Gnome
+					</a>
+				</div>
+
+				<Navigation />
 
 				<button
-					className={isMenuOpen ? s.burgerMenu : s.isBurgerMenuOpen}
+					className={isMenuOpen ? s.isBurgerMenuOpen : s.burgerMenu}
 					type="button"
 					onClick={onBurgerMenClick}
 				></button>
