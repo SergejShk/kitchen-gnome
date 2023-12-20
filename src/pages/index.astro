@@ -3,19 +3,21 @@ import Layout from "../layouts/Layout.astro";
 
 import Header from "../components/Header/Header";
 import Home from "../components/Home/Home.astro";
+import AboutUs from "../components/AboutUs/AboutUs.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<Header client:load />
+  <Header client:load />
 
-	<main>
-		<Home />
-	</main>
+  <main>
+    <Home />
+    <AboutUs />
+  </main>
 </Layout>
 <style>
-	main {
-		width: 375px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
+  main {
+    width: 375px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 </style>
