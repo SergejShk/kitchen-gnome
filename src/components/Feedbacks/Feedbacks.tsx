@@ -9,6 +9,8 @@ import "swiper/css/pagination";
 import s from "./feedbacks.module.css";
 
 const Feedbacks = () => {
+	const screenWidth = window.innerWidth;
+
 	return (
 		<section className={s.feedbacksSection}>
 			<div className={s.feedbacksDecor} />
@@ -20,7 +22,7 @@ const Feedbacks = () => {
 					el: ".feedbacks-pagination",
 					clickable: true,
 				}}
-				slidesPerView={1.1}
+				slidesPerView={screenWidth < 1440 ? 1.1 : 3.65}
 				grabCursor
 			>
 				{feedbacks.map((feedback, index) => (

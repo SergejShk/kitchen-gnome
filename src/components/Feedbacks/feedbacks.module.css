@@ -3,6 +3,12 @@
 	padding: 48px 0 94px 20px;
 }
 
+@media screen and (min-width: 1440px) {
+	.feedbacksSection {
+		padding: 100px 0 92px 64px;
+	}
+}
+
 .feedbacksDecor {
 	width: 43px;
 	height: 8px;
@@ -17,6 +23,13 @@
 	font-weight: 700;
 	line-height: normal;
 	margin: 24px 0 50px;
+}
+
+@media screen and (min-width: 1440px) {
+	.feedbacksTitle {
+		font-size: 64px;
+		margin: 32px 0 40px;
+	}
 }
 
 .swiperPaginations {
@@ -44,12 +57,28 @@
 	padding: 40px 14px 53px 15px;
 }
 
+@media screen and (min-width: 1440px) {
+	.card {
+		width: calc(331px - 32px);
+		height: calc(438px - 80px);
+		padding: 32px 16px 48px;
+	}
+}
+
 .imgPerson {
 	display: block;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	margin-bottom: 19px;
+}
+
+@media screen and (min-width: 1440px) {
+	.imgPerson {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 16px;
+	}
 }
 
 .namePerson {
@@ -61,6 +90,12 @@
 	line-height: 140%;
 }
 
+@media screen and (min-width: 1440px) {
+	.namePerson {
+		font-size: 20px;
+	}
+}
+
 .feedback {
 	color: #929292;
 	font-family: Avenir;
@@ -69,6 +104,12 @@
 	font-weight: 500;
 	line-height: 140%;
 	margin: 17px 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+	.feedback {
+		font-size: 16px;
+	}
 }
 
 .rateList {
@@ -82,4 +123,11 @@
 .imgRate {
 	width: 25px;
 	height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+	.imgRate {
+		width: 20px;
+		height: 20px;
+	}
 }
