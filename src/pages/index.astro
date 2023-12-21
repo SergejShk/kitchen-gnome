@@ -6,6 +6,7 @@ import Home from "../components/Home/Home.astro";
 import AboutUs from "../components/AboutUs/AboutUs.astro";
 import Features from "../components/Features/Features";
 import Feedbacks from "../components/Feedbacks/Feedbacks";
+import Contact from "../components/Contact/Contact.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -13,9 +14,10 @@ import Feedbacks from "../components/Feedbacks/Feedbacks";
 
 	<main>
 		<Home />
-		<AboutUs />
+		<AboutUs client:visible />
 		<Features client:load />
 		<Feedbacks client:load />
+		<Contact client:visible />
 	</main>
 </Layout>
 <style>

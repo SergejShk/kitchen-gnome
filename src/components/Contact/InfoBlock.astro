@@ -1,0 +1,61 @@
+<ul class="infoBlock">
+	<li>
+		<h3 class="infoBlock__title">Email</h3>
+		<a class="infoBlock__social" href="mailto:111112223333wow@gmail.com">111112223333wow@gmail.com</a>
+	</li>
+
+	<li>
+		<h3 class="infoBlock__title">Socials</h3>
+		<ul class="infoBlock__social--list">
+			<li>
+				<a class="infoBlock__social" href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+					>Twitter</a
+				>
+			</li>
+			<li>
+				<a class="infoBlock__social" href="https://instagram.com/" target="_blank" rel="noreferrer noopener"
+					>Instagram</a
+				>
+			</li>
+		</ul>
+	</li>
+</ul>
+<style>
+	.infoBlock {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 40px 0 0;
+	}
+
+	.infoBlock__title {
+		color: #040404;
+		font-family: Avenir;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		margin-bottom: 12px;
+	}
+
+	.infoBlock__social--list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.infoBlock__social {
+		color: #040404;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		line-height: normal;
+		text-decoration-line: underline;
+		transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.infoBlock__social:hover,
+	.infoBlock__social:focus {
+		color: #28d764;
+	}
+</style>

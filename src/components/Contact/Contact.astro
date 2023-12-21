@@ -1,0 +1,40 @@
+---
+import ContactForm from './ContactForm.astro';
+import InfoBlock from './InfoBlock.astro';
+import Decor from '../common/Decor.astro';
+---
+
+<section class="contact__section">
+    <Decor/>
+    <h2 class="contact__title">Let’s Talk</h2>
+    <p class="contact__description">Drop us a message, and let's embark on a delightful conversation about all things food. Your culinary journey is our passion, and we can't wait to chat with you!</p>
+    <ContactForm />
+    <InfoBlock />
+</section>
+<style>
+    .contact__section {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 20px 60px;
+    }
+
+    .contact__title {
+        color: #040404;
+        font-family: Abhaya Libre;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 24px 0 16px;
+    }
+
+    .contact__description {
+        color: #040404;
+        font-family: Avenir;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 24px;
+    }
+</style>

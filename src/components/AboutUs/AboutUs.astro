@@ -1,127 +1,133 @@
-<section class="about--section">
-    <picture>
-        <source srcset="/images/about/about-desk-1x.jpg 1x,
-                        /images/about/about-desk-2x.jpg 2x" media="(min-width: 1440px)"/>
-        <source srcset="/images/about/about-mob-1x.jpg 1x,
-                        /images/about/about-mob-2x.jpg 2x" media="(max-width: 1439px)"/>
-        <img class="about__image"
-        loading="lazy"
-        src="/images/about/about-mob-1x.jpg" alt="About image"/>  
-    </picture>
+---
+import Decor from "../common/Decor.astro";
+---
 
-    <div class="about__descriptionBlock">
-        <div class="about__decor"/>
-        <h2 class="about__title">About us</h2>
-        <p class="about__description">Your AI-powered kitchen companion. Simplify management, track inventory, and discover recipes from your ingredients. Digitalize shopping lists, ensure food safety, and enjoy real-time updates. Personalized and always evolving for a seamless culinary experience.</p>
-        <a
-            class="about--appstore"
-            href="https://www.apple.com/app-store/"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="appstore"
-        >
-        </a>
-    </div>
+<section class="about--section">
+	<picture>
+		<source
+			srcset="/images/about/about-desk-1x.jpg 1x,
+                        /images/about/about-desk-2x.jpg 2x"
+			media="(min-width: 1440px)"
+		/>
+		<source
+			srcset="/images/about/about-mob-1x.jpg 1x,
+                        /images/about/about-mob-2x.jpg 2x"
+			media="(max-width: 1439px)"
+		/>
+		<img class="about__image" loading="lazy" src="/images/about/about-mob-1x.jpg" alt="About image" />
+	</picture>
+
+	<div class="about__descriptionBlock">
+		<Decor />
+		<h2 class="about__title">About us</h2>
+		<p class="about__description">
+			Your AI-powered kitchen companion. Simplify management, track inventory, and discover recipes from your
+			ingredients. Digitalize shopping lists, ensure food safety, and enjoy real-time updates. Personalized
+			and always evolving for a seamless culinary experience.
+		</p>
+		<a
+			class="about--appstore"
+			href="https://www.apple.com/app-store/"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="appstore"
+		>
+		</a>
+	</div>
 </section>
 <style>
-  .about--section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+	.about--section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .about--section {
-      flex-direction: row-reverse;
-      height: 800px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.about--section {
+			flex-direction: row-reverse;
+			height: 800px;
+		}
+	}
 
-  .about__image {
-    display: block;
-    width: 375px;
-    height: 390px;
-  }
+	.about__image {
+		display: block;
+		width: 375px;
+		height: 390px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .about__image {
-      width: 735px;
-      height: 800px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.about__image {
+			width: 735px;
+			height: 800px;
+		}
+	}
 
-  .about__descriptionBlock {
-    width: calc(100% - 36px);
-    display: flex;
-    flex-direction: column;
-    background-color: #040404;
-    padding: 48px 16px 50px 20px;
-  }
+	.about__descriptionBlock {
+		width: calc(100% - 36px);
+		display: flex;
+		flex-direction: column;
+		background-color: #040404;
+		padding: 48px 16px 50px 20px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .about__descriptionBlock {
-      width: calc(50% - 141px);
-      padding: 200px 77px 0 64px;
-      height: calc(100% - 200px);
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.about__descriptionBlock {
+			width: calc(50% - 141px);
+			padding: 200px 77px 0 64px;
+			height: calc(100% - 200px);
+		}
+	}
 
-  .about__decor {
-    width: 43px;
-    height: 8px;
-    background-color: #29D764;
-  }
+	.about__title {
+		color: #fff;
+		font-family: Abhaya Libre;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		margin: 24px 0 17px;
+	}
 
-  .about__title {
-    color: #fff;
-    font-family: Abhaya Libre;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 24px 0 17px;
-  }
+	@media screen and (min-width: 1440px) {
+		.about__title {
+			font-size: 64px;
+			margin: 32px 0 24px;
+		}
+	}
 
-  @media screen and (min-width: 1440px) {
-    .about__title {
-      font-size: 64px;
-      margin: 32px 0 24px;
-    }
-  }
+	.about__description {
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+		color: #fff;
+		margin: 0 0 32px;
+	}
 
-  .about__description {
-    font-family: Avenir;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    color: #fff;
-    margin: 0 0 32px;
-  }
+	@media screen and (min-width: 1440px) {
+		.about__description {
+			font-size: 20px;
+			margin: 0 0 48px;
+		}
+	}
 
-  @media screen and (min-width: 1440px) {
-    .about__description {
-      font-size: 20px;
-      margin: 0 0 48px;
-    }
-  }
+	.about--appstore {
+		width: 143px;
+		height: 48px;
+		border-radius: 6px;
+		background-image: url("/icons/appstore-white.svg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 
-  .about--appstore {
-    width: 143px;
-    height: 48px;
-    border-radius: 6px;
-    background-image: url("/icons/appstore-white.svg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  @media screen and (min-width: 1440px) {
-    .about--appstore {
-      width: 204px;
-      height: 52px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.about--appstore {
+			width: 204px;
+			height: 52px;
+		}
+	}
 </style>

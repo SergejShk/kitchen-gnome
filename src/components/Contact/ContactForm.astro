@@ -1,0 +1,93 @@
+<form class="contact__form">
+	<label for="name" class="contact__label">
+		<span>Name</span>
+		<input type="text" class="contact__input" name="name" id="name" />
+	</label>
+
+	<label for="email" class="contact__label">
+		<span>Email</span>
+		<input type="email" class="contact__input" name="email" id="email" />
+	</label>
+
+	<label for="message" class="contact__label">
+		<span>Message</span>
+		<textarea class="contact__input--message" name="message" id="message"></textarea>
+	</label>
+
+	<button class="contact__formBtn" type="submit">Submit</button>
+</form>
+<style>
+	.contact__form {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.contact__label {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		color: #040404;
+		font-family: Avenir;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.contact__input {
+		background-color: #f7f7f7;
+		color: #040404;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		line-height: normal;
+		border: none;
+		padding: 8px 12px 7px;
+		outline: none;
+		transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.contact__input:hover,
+	.contact__input:focus {
+		color: #28d764;
+	}
+
+	.contact__input--message {
+		resize: none;
+		width: calc(100% - 24px);
+		height: 130px;
+		background-color: #f7f7f7;
+		color: #040404;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		line-height: normal;
+		border: none;
+		padding: 8px 12px 7px;
+		outline: none;
+		transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.contact__input--message:hover,
+	.contact__input--message:focus {
+		color: #28d764;
+	}
+
+	.contact__formBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		background-color: #040404;
+		color: #fff;
+		padding: 12px 60px 11px;
+		width: 173px;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		margin: 0 auto;
+	}
+</style>
