@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 import s from "./features.module.css";
 
 const Features = () => {
-	const [firstSwiper, setFirstSwiper] = useState<null | any>(null);
-	const [secondSwiper, setSecondSwiper] = useState<null | any>(null);
+	const [imgSwiper, setImgSwiper] = useState<null | any>(null);
+	const [descriptionSwiper, setDescriptionSwiper] = useState<null | any>(null);
 
 	return (
 		<section className={s.featuresSection}>
@@ -19,8 +19,8 @@ const Features = () => {
 				<div className={s.featuresImgBox}>
 					<Swiper
 						modules={[Controller, Pagination]}
-						onSwiper={setFirstSwiper}
-						controller={{ control: secondSwiper }}
+						onSwiper={setImgSwiper}
+						controller={{ control: descriptionSwiper }}
 						pagination={{
 							el: ".swiper-paginations",
 							clickable: true,
@@ -53,8 +53,8 @@ const Features = () => {
 				<div className={s.featuresDecor}></div>
 				<Swiper
 					modules={[Controller]}
-					onSwiper={setSecondSwiper}
-					controller={{ control: firstSwiper }}
+					onSwiper={setDescriptionSwiper}
+					controller={{ control: imgSwiper }}
 					loop
 					className="swiper-no-swiping"
 				>

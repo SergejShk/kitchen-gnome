@@ -9,21 +9,22 @@ import "swiper/css/pagination";
 import s from "./feedbacks.module.css";
 
 const Feedbacks = () => {
-	const screenWidth = window.innerWidth;
-
 	return (
 		<section className={s.feedbacksSection}>
 			<div className={s.feedbacksDecor} />
 			<h2 className={s.feedbacksTitle}>Feedbacks</h2>
 
 			<Swiper
+				grabCursor
 				modules={[Pagination]}
 				pagination={{
 					el: ".feedbacks-pagination",
 					clickable: true,
 				}}
-				slidesPerView={screenWidth < 1440 ? 1.1 : 3.65}
-				grabCursor
+				breakpoints={{
+					375: { slidesPerView: 1.1 },
+					1440: { slidesPerView: 3.65 },
+				}}
 			>
 				{feedbacks.map((feedback, index) => (
 					<SwiperSlide key={index}>
