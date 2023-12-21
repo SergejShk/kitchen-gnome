@@ -1,0 +1,81 @@
+.featuresSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.featuresImgContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #29d664;
+	padding: 41px 0 16px;
+	width: 100%;
+}
+
+.swiperPaginations {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 34px 0 0;
+	height: 8px;
+}
+
+.featuresImgBox {
+	width: 216px;
+	height: 450px;
+	background-color: tomato;
+	border-radius: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.featuresDescriptionContainer {
+	padding: 30px 15px 67px 20px;
+}
+
+.swiperImgs {
+	width: 200px;
+	height: 433px;
+	border-radius: 13px;
+}
+
+.featuresDecor {
+	width: 43px;
+	height: 8px;
+	background-color: #29d764;
+}
+
+.featuresTitle {
+	color: #040404;
+	font-family: Abhaya Libre;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 24px 0 16px;
+}
+
+.descriptionList {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.descriptionItem {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	font-family: Avenir;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	color: #040404;
+}
+
+.iconDescription {
+	margin-top: 3px;
+}

@@ -4,6 +4,8 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header";
 import Home from "../components/Home/Home.astro";
 import AboutUs from "../components/AboutUs/AboutUs.astro";
+// import Features from "../components/Features/Features.astro";
+import TestSwiper from "../components/Features/TestSwiper";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,6 +14,8 @@ import AboutUs from "../components/AboutUs/AboutUs.astro";
   <main>
     <Home />
     <AboutUs />
+    <TestSwiper client:load />
+    <!-- <Features client:load /> -->
   </main>
 </Layout>
 <style>
