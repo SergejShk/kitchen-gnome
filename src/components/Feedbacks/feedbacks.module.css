@@ -1,0 +1,85 @@
+.feedbacksSection {
+	background-color: #040404;
+	padding: 48px 0 94px 20px;
+}
+
+.feedbacksDecor {
+	width: 43px;
+	height: 8px;
+	background-color: #29d764;
+}
+
+.feedbacksTitle {
+	color: #fff;
+	font-family: Abhaya Libre;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 24px 0 50px;
+}
+
+.swiperPaginations {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 24px 0 0 -10px;
+	height: 8px;
+	--swiper-pagination-color: #fff;
+	--swiper-pagination-bullet-inactive-color: #fff;
+	--swiper-pagination-bullet-inactive-opacity: 0.4;
+	--swiper-pagination-bullet-size: 8px;
+	--swiper-pagination-bullet-horizontal-gap: 5px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	fill: #040404;
+	border: 1px solid #fff;
+	border-radius: 16px;
+	width: calc(296px - 29px);
+	height: calc(440px - 93px);
+	padding: 40px 14px 53px 15px;
+}
+
+.imgPerson {
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 19px;
+}
+
+.namePerson {
+	color: #fff;
+	font-family: Avenir;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+}
+
+.feedback {
+	color: #929292;
+	font-family: Avenir;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	margin: 17px 0 0;
+}
+
+.rateList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin-top: auto;
+}
+
+.imgRate {
+	width: 25px;
+	height: 24px;
+}

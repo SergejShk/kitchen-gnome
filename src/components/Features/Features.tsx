@@ -46,16 +46,7 @@ const Features = () => {
 						</SwiperSlide>
 					</Swiper>
 				</div>
-				<div
-					className={`${s.swiperPaginations} swiper-paginations`}
-					style={{
-						"--swiper-pagination-color": "#fff",
-						"--swiper-pagination-bullet-inactive-color": "#fff",
-						"--swiper-pagination-bullet-inactive-opacity": "0.4",
-						"--swiper-pagination-bullet-size": "8px",
-						"--swiper-pagination-bullet-horizontal-gap": "5px",
-					}}
-				></div>
+				<div className={`${s.swiperPaginations} swiper-paginations`}></div>
 			</div>
 
 			<div className={s.featuresDescriptionContainer}>

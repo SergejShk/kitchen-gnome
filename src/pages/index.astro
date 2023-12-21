@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Home from "../components/Home/Home.astro";
 import AboutUs from "../components/AboutUs/AboutUs.astro";
 import Features from "../components/Features/Features";
+import Feedbacks from "../components/Feedbacks/Feedbacks";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -14,6 +15,7 @@ import Features from "../components/Features/Features";
 		<Home />
 		<AboutUs />
 		<Features client:load />
+		<Feedbacks client:load />
 	</main>
 </Layout>
 <style>

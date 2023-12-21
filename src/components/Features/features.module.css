@@ -32,6 +32,11 @@
 	justify-content: center;
 	margin: 34px 0 0;
 	height: 8px;
+	--swiper-pagination-color: #fff;
+	--swiper-pagination-bullet-inactive-color: #fff;
+	--swiper-pagination-bullet-inactive-opacity: 0.4;
+	--swiper-pagination-bullet-size: 8px;
+	--swiper-pagination-bullet-horizontal-gap: 5px;
 }
 
 @media screen and (min-width: 1440px) {
