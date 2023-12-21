@@ -4,30 +4,28 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header/Header";
 import Home from "../components/Home/Home.astro";
 import AboutUs from "../components/AboutUs/AboutUs.astro";
-// import Features from "../components/Features/Features.astro";
-import TestSwiper from "../components/Features/TestSwiper";
+import Features from "../components/Features/Features";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Header client:load />
+	<Header client:load />
 
-  <main>
-    <Home />
-    <AboutUs />
-    <TestSwiper client:load />
-    <!-- <Features client:load /> -->
-  </main>
+	<main>
+		<Home />
+		<AboutUs />
+		<Features client:load />
+	</main>
 </Layout>
 <style>
-  main {
-    width: 375px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+	main {
+		width: 375px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
 
-  @media screen and (min-width: 1440px) {
-    main {
-      width: 1440px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		main {
+			width: 1440px;
+		}
+	}
 </style>

@@ -3,6 +3,12 @@
 	flex-direction: column;
 }
 
+@media screen and (min-width: 1440px) {
+	.featuresSection {
+		flex-direction: row;
+	}
+}
+
 .featuresImgContainer {
 	display: flex;
 	flex-direction: column;
@@ -13,6 +19,13 @@
 	width: 100%;
 }
 
+@media screen and (min-width: 1440px) {
+	.featuresImgContainer {
+		width: 705px;
+		padding: 58px 0 26px;
+	}
+}
+
 .swiperPaginations {
 	display: flex;
 	align-items: center;
@@ -21,10 +34,15 @@
 	height: 8px;
 }
 
+@media screen and (min-width: 1440px) {
+	.swiperPaginations {
+		margin: 26px 0 0;
+	}
+}
+
 .featuresImgBox {
 	width: 216px;
 	height: 450px;
-	background-color: tomato;
 	border-radius: 23px;
 	display: flex;
 	justify-content: center;
@@ -32,14 +50,35 @@
 	background-color: #fff;
 }
 
+@media screen and (min-width: 1440px) {
+	.featuresImgBox {
+		width: 328px;
+		height: 682px;
+	}
+}
+
 .featuresDescriptionContainer {
 	padding: 30px 15px 67px 20px;
+}
+
+@media screen and (min-width: 1440px) {
+	.featuresDescriptionContainer {
+		width: 635px;
+		padding: 201px 40px 67px 40px;
+	}
 }
 
 .swiperImgs {
 	width: 200px;
 	height: 433px;
 	border-radius: 13px;
+}
+
+@media screen and (min-width: 1440px) {
+	.swiperImgs {
+		width: 304px;
+		height: 658px;
+	}
 }
 
 .featuresDecor {
@@ -58,10 +97,23 @@
 	margin: 24px 0 16px;
 }
 
+@media screen and (min-width: 1440px) {
+	.featuresTitle {
+		font-size: 64px;
+		margin: 32px 0 24px;
+	}
+}
+
 .descriptionList {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+	.descriptionList {
+		gap: 20px;
+	}
 }
 
 .descriptionItem {
@@ -76,6 +128,19 @@
 	color: #040404;
 }
 
+@media screen and (min-width: 1440px) {
+	.descriptionItem {
+		font-size: 20px;
+		gap: 20px;
+	}
+}
+
 .iconDescription {
 	margin-top: 3px;
+}
+
+@media screen and (min-width: 1440px) {
+	.iconDescription {
+		margin-top: 5px;
+	}
 }

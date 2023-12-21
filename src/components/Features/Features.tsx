@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import s from "./features.module.css";
 
-const TestSwiper = () => {
+const Features = () => {
 	const [firstSwiper, setFirstSwiper] = useState<null | any>(null);
 	const [secondSwiper, setSecondSwiper] = useState<null | any>(null);
 
@@ -158,4 +158,4 @@ const TestSwiper = () => {
 	);
 };
 
-export default TestSwiper;
+export default Features;
