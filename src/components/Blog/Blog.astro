@@ -143,3 +143,15 @@
         }
     }
 </style>
+
+<script>
+    const btnReedMoreRef = document.querySelector(".blog__btn--readMore");
+    const blogWrapperRef = document.querySelector(".blog__wrapper");
+
+    const onReedMoreBtnClick = (e: Event) => {
+        btnReedMoreRef.classList.add("is-hidden");
+        blogWrapperRef.style.height = 'auto';
+    }
+
+    btnReedMoreRef.addEventListener("click", onReedMoreBtnClick);
+</script>
