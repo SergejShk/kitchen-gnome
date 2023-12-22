@@ -125,3 +125,30 @@
 		}
 	}
 </style>
+
+<script>
+	const formRef = document.querySelector(".contact__form") as HTMLFormElement;
+
+	const onFormSubmit = (e) => {
+		e.preventDefault();
+
+		const form = e?.currentTarget;
+		if (!form) return;
+
+		const formElements = form.elements;
+		const name = formElements.name.value;
+		const email = formElements.email.value;
+		const message = formElements.message.value;
+
+		const formData = {
+			name,
+			email,
+			message,
+		};
+		console.log(formData);
+
+		form.reset();
+	};
+
+	formRef?.addEventListener("submit", onFormSubmit);
+</script>
