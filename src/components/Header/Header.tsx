@@ -8,22 +8,31 @@ import s from "./header.module.css";
 const Header: FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const onBurgerMenClick = () => {
+	const onBurgerMenuClick = () => {
 		setIsMenuOpen((prev) => !prev);
 	};
 
-	useEffect(() => {
-		const body = document.querySelector('body');
+	const onLogoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+		e.preventDefault();
 
-		isMenuOpen ? body.classList.add('no-scroll') : body.classList.remove('no-scroll');
-	},[isMenuOpen])
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
+	useEffect(() => {
+		const body = document.querySelector("body");
+
+		isMenuOpen ? body?.classList.add("no-scroll") : body?.classList.remove("no-scroll");
+	}, [isMenuOpen]);
 
 	return (
 		<>
 			<header className={s.header}>
 				<div className={s.headerWrapper}>
-					<a className={s.headerLogo} href="/">
-						<img className={s.logo} src='/icons/logo-black.svg' alt="logo"/>
+					<a className={s.headerLogo} href="#" onClick={onLogoClick}>
+						<img className={s.logo} src="/icons/logo-black.svg" alt="logo" />
 						Kitchen Gnome
 					</a>
 
@@ -32,10 +41,10 @@ const Header: FC = () => {
 					<button
 						className={isMenuOpen ? s.isBurgerMenuOpen : s.burgerMenu}
 						type="button"
-						onClick={onBurgerMenClick}
+						onClick={onBurgerMenuClick}
 					></button>
 				</div>
-				<MobileMenu isMenuOpen={isMenuOpen} />
+				<MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 			</header>
 		</>
 	);

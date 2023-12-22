@@ -3,106 +3,106 @@ import ProductHuntLink from "../common/ProductHuntLink.astro";
 ---
 
 <section class="home--section">
-  <img class="home--logo" src="/icons/logo-main.svg" alt="logo" />
-  <h1 class="home--title">Kitchen Gnome</h1>
-  <p class="home--description">Your smart culinary guide</p>
-  <div class="home--linksWrapper">
-    <a
-      class="home--appstore"
-      href="https://www.apple.com/app-store/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="appstore"
-    >
-    </a>
-    <ProductHuntLink />
-  </div>
+	<img class="home--logo" src="/icons/logo-main.svg" alt="logo" />
+	<h1 class="home--title">Kitchen Gnome</h1>
+	<p class="home--description">Your smart culinary guide</p>
+	<div class="home--linksWrapper">
+		<a
+			class="home--appstore"
+			href="https://www.apple.com/app-store/"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="appstore"
+		>
+		</a>
+		<ProductHuntLink />
+	</div>
 </section>
 
 <style>
-  .home--section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 70px);
-    overflow: hidden;
-    margin: 70px 0 0;
-  }
+	.home--section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 70px);
+		overflow: hidden;
+		margin: 70px 0 0;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .home--section {
-      margin: 145px 0 0;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.home--section {
+			margin: 145px 0 0;
+		}
+	}
 
-  .home--logo {
-    display: block;
-    width: 64px;
-    height: 64px;
-  }
+	.home--logo {
+		display: block;
+		width: 64px;
+		height: 64px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .home--logo {
-      width: 90px;
-      height: 90px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.home--logo {
+			width: 90px;
+			height: 90px;
+		}
+	}
 
-  .home--title {
-    font-family: Abhaya Libre;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 12px auto 30px;
-  }
+	.home--title {
+		font-family: Abhaya Libre;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		margin: 12px auto 30px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .home--title {
-      font-size: 80px;
-      margin: 48px auto 24px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.home--title {
+			font-size: 80px;
+			margin: 48px auto 24px;
+		}
+	}
 
-  .home--description {
-    font-family: Avenir;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin: 0 auto 65px;
-  }
+	.home--description {
+		font-family: Avenir;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		margin: 0 auto 65px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .home--description {
-      font-size: 40px;
-      margin: 0 auto 48px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.home--description {
+			font-size: 40px;
+			margin: 0 auto 48px;
+		}
+	}
 
-  .home--linksWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
+	.home--linksWrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
 
-  @media screen and (min-width: 1440px) {
-    .home--linksWrapper {
-      flex-direction: row;
-      gap: 24px;
-    }
-  }
+	@media screen and (min-width: 1440px) {
+		.home--linksWrapper {
+			flex-direction: row;
+			gap: 24px;
+		}
+	}
 
-  .home--appstore {
-    width: 180px;
-    height: 50px;
-    border-radius: 6px;
-    background-image: url("/icons/appstore.svg");
-    background-size: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+	.home--appstore {
+		width: 180px;
+		height: 50px;
+		border-radius: 6px;
+		background-image: url("/icons/appstore.svg");
+		background-size: auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 </style>

@@ -10,7 +10,7 @@ import s from "./feedbacks.module.css";
 
 const Feedbacks = () => {
 	return (
-		<section className={s.feedbacksSection}>
+		<section className={s.feedbacksSection} id="feedbacks">
 			<div className={s.feedbacksDecor} />
 			<h2 className={s.feedbacksTitle}>Feedbacks</h2>
 

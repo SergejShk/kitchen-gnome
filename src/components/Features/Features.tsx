@@ -14,7 +14,7 @@ const Features = () => {
 	const [descriptionSwiper, setDescriptionSwiper] = useState<null | any>(null);
 
 	return (
-		<section className={s.featuresSection}>
+		<section className={s.featuresSection} id="features">
 			<div className={s.featuresImgContainer}>
 				<div className={s.featuresImgBox}>
 					<Swiper
