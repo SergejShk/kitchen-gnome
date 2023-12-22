@@ -1,0 +1,105 @@
+---
+import ProductHuntLink from "../common/ProductHuntLink.astro";
+---
+
+<footer class="footer">
+    <ul class="footer__socialBtnList">
+        <li>
+            <button class="footer__phBtn--mobile" type='button' />
+        </li>
+        <li>
+            <button class="footer__appstore--mobile" type='button' />
+        </li>
+    </ul>
+
+    <div class="footer__copyrightBlock">
+        <p class="footer__copyright">&#169; 2023, Kitchen Gnome</p>
+        <ul class="footer__socialLinksList">
+            <li>
+                <a class="footer__link--twitter" href="https://www.twitter.com" target="_blank"></a>
+            </li>
+            <li>
+                <a class="footer__link--inst" href="https://www.instagram.com" target="_blank"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<style>
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+        padding: 0px 20px 36px;
+        background-color: #040404;
+    }
+
+    .footer__socialBtnList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer__phBtn--mobile {
+        cursor: pointer;
+        width: 142px;
+        height: 48px;
+        border-radius: 6px;
+        background-image: url("/icons/ph-mob.svg");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .footer__appstore--mobile {
+        cursor: pointer;
+        width: 143px;
+        height: 48px;
+        border-radius: 6px;
+        background-image: url("/icons/appstore-mob.svg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .footer__copyrightBlock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__copyright {
+        color: #fff;
+        font-family: Avenir;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .footer__socialLinksList {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__link--twitter {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("/icons/twitter.svg");
+        background-size: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+   
+    .footer__link--inst {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("/icons/instagram.svg");
+        background-size: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+</style>
