@@ -189,4 +189,27 @@
 		clip: rect(0 0 0 0);
 		overflow: hidden;
 	}
+
+	.only-desktop {
+		display: none;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.only-desktop {
+			display: block;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.only-mobile {
+			height: 1px;
+			width: 1px;
+			position: absolute;
+			margin: -1px;
+			padding: 0;
+			border: 0;
+			clip: rect(0 0 0 0);
+			overflow: hidden;
+		}
+	}
 </style>
