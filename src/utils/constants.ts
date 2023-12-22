@@ -51,7 +51,7 @@ export const featureDescriptions = {
 
 export const feedbacks = [
 	{
-		name: "Emily",
+		name: "Jenny Wilson",
 		src: "/images/feedbacks/emily.jpg",
 		feedback:
 			"Love the way it syncs everything - from my fridge contents to shopping lists and even recipes I find online. Super intuitive and a lifesaver for meal planning!",
