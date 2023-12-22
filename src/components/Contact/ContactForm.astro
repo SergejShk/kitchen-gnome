@@ -23,6 +23,14 @@
 		gap: 16px;
 	}
 
+	@media screen and (min-width: 1440px) {
+		.contact__form {
+			width: calc(100% - 128px);
+			padding: 83px 0 0 32px;
+			gap: 24px;
+		}
+	}
+
 	.contact__label {
 		display: flex;
 		flex-direction: column;
@@ -33,6 +41,12 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.contact__label {
+			gap: 12px;
+		}
 	}
 
 	.contact__input {
@@ -46,6 +60,12 @@
 		padding: 8px 12px 7px;
 		outline: none;
 		transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	@media screen and (min-width: 1440px) {
+		.contact__input {
+			padding: 11px 12px 10px;
+		}
 	}
 
 	.contact__input:hover,
@@ -69,6 +89,13 @@
 		transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
+	@media screen and (min-width: 1440px) {
+		.contact__input--message {
+			padding: 11px 12px 10px;
+			height: 144px;
+		}
+	}
+
 	.contact__input--message:hover,
 	.contact__input--message:focus {
 		color: #28d764;
@@ -89,5 +116,12 @@
 		font-weight: 800;
 		line-height: normal;
 		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.contact__formBtn {
+			min-height: 56px;
+			margin: 0;
+		}
 	}
 </style>
