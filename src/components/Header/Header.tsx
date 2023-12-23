@@ -30,7 +30,7 @@ const Header: FC = () => {
 	return (
 		<>
 			<header className={s.header}>
-				<div className={s.headerWrapper}>
+				<div className={s.headerContainer}>
 					<a className={s.headerLogo} href="#" onClick={onLogoClick}>
 						<img className={s.logo} src="/icons/logo-black.svg" alt="logo" />
 						Kitchen Gnome

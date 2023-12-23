@@ -1,101 +1,111 @@
 ---
-import ContactForm from './ContactForm.astro';
-import InfoBlock from './InfoBlock.astro';
-import Decor from '../common/Decor.astro';
+import ContactForm from "./ContactForm.astro";
+import InfoBlock from "./InfoBlock.astro";
+import Decor from "../common/Decor.astro";
 ---
 
 <section class="contact__section" id="contact">
-    <div class="contact__titleBlock--wrapper">
-        <Decor/>
-        <h2 class="contact__title">Let’s Talk</h2>
-        <p class="contact__description">Drop us a message, and let's embark on a delightful conversation about all things food. Your culinary journey is our passion, and we can't wait to chat with you!</p>
-        <div class="contact__infoBlock--desktop">
-            <InfoBlock />
-        </div>
-    </div>
+	<div class="contact__container">
+		<div class="contact__titleBlock--wrapper">
+			<Decor />
+			<h2 class="contact__title">Let’s Talk</h2>
+			<p class="contact__description">
+				Drop us a message, and let's embark on a delightful conversation about all things food. Your culinary
+				journey is our passion, and we can't wait to chat with you!
+			</p>
+			<div class="contact__infoBlock--desktop">
+				<InfoBlock />
+			</div>
+		</div>
 
-    <ContactForm />
-    
-    <div class="contact__infoBlock--mobile">
-        <InfoBlock />
-    </div>
+		<ContactForm />
 
-    
+		<div class="contact__infoBlock--mobile">
+			<InfoBlock />
+		</div>
+	</div>
 </section>
 <style>
-    .contact__section {
-        display: flex;
-        flex-direction: column;
-        padding: 48px 20px 60px;
-    }
+	.contact__section {
+		width: 100%;
+		background-color: #fff;
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__section {
-        flex-direction: row;
-        padding: 123px 64px 116px;
-        }
-    }
+	.contact__container {
+		width: calc(375px - 40px);
+		display: flex;
+		flex-direction: column;
+		padding: 48px 20px 60px;
+		margin: 0 auto;
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__titleBlock--wrapper {
-        width: calc(100% - 128px);
-        }
-    }
+	@media screen and (min-width: 1440px) {
+		.contact__container {
+			width: calc(1440px - 128px);
+			flex-direction: row;
+			padding: 123px 64px 116px;
+		}
+	}
 
-    .contact__title {
-        color: #040404;
-        font-family: Abhaya Libre;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 0.9;
-        margin: 24px 0 16px;
-    }
+	@media screen and (min-width: 1440px) {
+		.contact__titleBlock--wrapper {
+			width: calc(100% - 128px);
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__title {
-        font-size: 64px;
-        margin: 32px 0 24px;
-        }
-    }
+	.contact__title {
+		color: #040404;
+		font-family: Abhaya Libre;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 0.9;
+		margin: 24px 0 16px;
+	}
 
-    .contact__description {
-        color: #040404;
-        font-family: Avenir;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0 0 24px;
-    }
+	@media screen and (min-width: 1440px) {
+		.contact__title {
+			font-size: 64px;
+			margin: 32px 0 24px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__description {
-        font-size: 20px;
-        margin: 0 0 48px;
-        width: 538px;
-        }
-    }
+	.contact__description {
+		color: #040404;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+		margin: 0 0 24px;
+	}
 
-    .contact__infoBlock--desktop {
-        display: none;
-    }
+	@media screen and (min-width: 1440px) {
+		.contact__description {
+			font-size: 20px;
+			margin: 0 0 48px;
+			width: 538px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__infoBlock--desktop {
-        display: block;
-        }
-    }
+	.contact__infoBlock--desktop {
+		display: none;
+	}
 
-    @media screen and (min-width: 1440px) {
-    .contact__infoBlock--mobile {
-        height: 1px;
-        width: 1px;
-        position: absolute;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-        }
-    }
-    
+	@media screen and (min-width: 1440px) {
+		.contact__infoBlock--desktop {
+			display: block;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.contact__infoBlock--mobile {
+			height: 1px;
+			width: 1px;
+			position: absolute;
+			margin: -1px;
+			padding: 0;
+			border: 0;
+			clip: rect(0 0 0 0);
+			overflow: hidden;
+		}
+	}
 </style>

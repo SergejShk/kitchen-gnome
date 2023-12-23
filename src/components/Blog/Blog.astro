@@ -1,157 +1,190 @@
 <section class="blog__section" id="blog-story">
-    <h2 class="blog__title">Blog Story</h2>
-    <picture>
-		<source
-			srcset="/images/blog/jenny-wilson-desk.jpg 1x"
-			media="(min-width: 1440px)"
-		/>
-		<source
-			srcset="/images/blog/jenny-wilson-mob.jpg 1x"
-			media="(max-width: 1439px)"
-		/>
-		<img class="blog__photo" loading="lazy" src="/images/blog/jenny-wilson-mob.jpg" alt="Bloger photo" />
-	</picture>
+	<div class="blog__container">
+		<h2 class="blog__title">Blog Story</h2>
+		<picture>
+			<source srcset="/images/blog/jenny-wilson-desk.jpg 1x" media="(min-width: 1440px)" />
+			<source srcset="/images/blog/jenny-wilson-mob.jpg 1x" media="(max-width: 1439px)" />
+			<img class="blog__photo" loading="lazy" src="/images/blog/jenny-wilson-mob.jpg" alt="Bloger photo" />
+		</picture>
 
-    <h3 class="blog__name">Jenny Wilson</h3>
+		<h3 class="blog__name">Jenny Wilson</h3>
 
-    <div class="blog__wrapper">
-        <p class="blog__text">As a home cooking enthusiast, I know the feeling of wanting to be organized and efficient in the kitchen. That's why I created the Kitchen Gnome app, a tool that helps track all of your groceries, their expiration dates, and even syncs with your shopping lists and recipes.</p>
-        <p class="blog__text">It all started during the pandemic when visiting the grocery store became a daunting task. I wanted to consume products wisely, but I found it difficult to keep track of everything I had in my pantry and fridge. I searched for an app that could help me manage my food inventory, but none of them seemed to fit my needs. That's when I decided to take matters into my own hands and create the Kitchen Gnome app.</p>
-        <p class="blog__text">At first, it was just a pet project that I worked on in my spare time. I added features to make it easier to input and track the expiration dates of my groceries. I also integrated shopping lists to help me plan my meals and avoid unnecessary trips to the store. As I continued to work on the app, I realized that it could be a helpful tool for others as well.</p>
-        <p class="blog__text">One of the most exciting features of the Kitchen Gnome app is its integration with AI. Now, you can input any ingredients you have on hand, and the app will find a recipe that uses those ingredients. This feature is particularly useful when you have a few items in your pantry that you need to use up before they expire.</p>
-        <p class="blog__text">I've found that the Kitchen Gnome app has made my life in the kitchen much easier and more efficient. I no longer have to worry about throwing out expired food or forgetting to buy an essential ingredient at the store. The app even reminds me when it's time to restock certain items, so I never run out of my favorite ingredients.</p>
-        <p class="blog__text">Overall, I created the Kitchen Gnome app out of a need for organization and efficiency in my own kitchen. But now, I'm excited to share this tool with other home cooking enthusiasts who want to simplify their meal planning and grocery shopping. Give it a try and see how it can transform the way you approach cooking and meal prep.</p>
-    </div>
+		<div class="blog__wrapper">
+			<p class="blog__text">
+				As a home cooking enthusiast, I know the feeling of wanting to be organized and efficient in the
+				kitchen. That's why I created the Kitchen Gnome app, a tool that helps track all of your groceries,
+				their expiration dates, and even syncs with your shopping lists and recipes.
+			</p>
+			<p class="blog__text">
+				It all started during the pandemic when visiting the grocery store became a daunting task. I wanted to
+				consume products wisely, but I found it difficult to keep track of everything I had in my pantry and
+				fridge. I searched for an app that could help me manage my food inventory, but none of them seemed to
+				fit my needs. That's when I decided to take matters into my own hands and create the Kitchen Gnome
+				app.
+			</p>
+			<p class="blog__text">
+				At first, it was just a pet project that I worked on in my spare time. I added features to make it
+				easier to input and track the expiration dates of my groceries. I also integrated shopping lists to
+				help me plan my meals and avoid unnecessary trips to the store. As I continued to work on the app, I
+				realized that it could be a helpful tool for others as well.
+			</p>
+			<p class="blog__text">
+				One of the most exciting features of the Kitchen Gnome app is its integration with AI. Now, you can
+				input any ingredients you have on hand, and the app will find a recipe that uses those ingredients.
+				This feature is particularly useful when you have a few items in your pantry that you need to use up
+				before they expire.
+			</p>
+			<p class="blog__text">
+				I've found that the Kitchen Gnome app has made my life in the kitchen much easier and more efficient.
+				I no longer have to worry about throwing out expired food or forgetting to buy an essential ingredient
+				at the store. The app even reminds me when it's time to restock certain items, so I never run out of
+				my favorite ingredients.
+			</p>
+			<p class="blog__text">
+				Overall, I created the Kitchen Gnome app out of a need for organization and efficiency in my own
+				kitchen. But now, I'm excited to share this tool with other home cooking enthusiasts who want to
+				simplify their meal planning and grocery shopping. Give it a try and see how it can transform the way
+				you approach cooking and meal prep.
+			</p>
+		</div>
 
-    <button class="blog__btn--readMore" type="button">Read more</button>
+		<button class="blog__btn--readMore" type="button">Read more</button>
+	</div>
 </section>
 <style>
-    .blog__section {
-        display: flex;
-        flex-direction: column;
-        padding: 60px 24px 122px;
-        background-color: #040404;
-    }
+	.blog__section {
+		width: 100%;
+		background-color: #040404;
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__section {
-        padding: 87px 167px 181px 189px;
-        }
-    }
+	.blog__container {
+		width: calc(375px - 48px);
+		display: flex;
+		flex-direction: column;
+		padding: 60px 24px 122px;
+		margin: 0 auto;
+	}
 
-    .blog__title {
-        color: #fff;
-        text-align: center;
-        font-family: Abhaya Libre;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__container {
+			width: calc(1440px - 167px - 189px);
+			padding: 87px 167px 181px 189px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__title {
-        font-size: 64px;
-        }
-    }
+	.blog__title {
+		color: #fff;
+		text-align: center;
+		font-family: Abhaya Libre;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
 
-    .blog__photo {
-        display: block;
-        width: 190px;
-        height: 244px;
-        border-radius: 11px;
-        margin: 32px auto;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__title {
+			font-size: 64px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__photo {
-        width: 232px;
-        height: 290px;
-        border-radius: 13px;
-        margin: 24px auto 32px;
-        }
-    }
+	.blog__photo {
+		display: block;
+		width: 190px;
+		height: 244px;
+		border-radius: 11px;
+		margin: 32px auto;
+	}
 
-    .blog__name {
-        color: #F5F5F5;
-        font-family: Avenir;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 140%;
-        text-align: center;
-        margin-bottom: 16px;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__photo {
+			width: 232px;
+			height: 290px;
+			border-radius: 13px;
+			margin: 24px auto 32px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__name {
-        font-size: 40px;
-        margin-bottom: 24px;
-        }
-    }
+	.blog__name {
+		color: #f5f5f5;
+		font-family: Avenir;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 140%;
+		text-align: center;
+		margin-bottom: 16px;
+	}
 
-    .blog__wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        height: 432px;
-        overflow: hidden;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__name {
+			font-size: 40px;
+			margin-bottom: 24px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__wrapper {
-        height: auto;
-        }
-    }
+	.blog__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		height: 432px;
+		overflow: hidden;
+	}
 
-    .blog__text {
-        color: #fff;
-        text-align: center;
-        font-family: Avenir;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__wrapper {
+			height: auto;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__text {
-        font-size: 20px;
-        }
-    }
+	.blog__text {
+		color: #fff;
+		text-align: center;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%;
+	}
 
-    .blog__btn--readMore {
-        color: #fff;
-        text-align: center;
-        font-family: Avenir;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-    }
+	@media screen and (min-width: 1440px) {
+		.blog__text {
+			font-size: 20px;
+		}
+	}
 
-    @media screen and (min-width: 1440px) {
-    .blog__btn--readMore {
-        height: 1px;
-        width: 1px;
-        position: absolute;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-        }
-    }
+	.blog__btn--readMore {
+		color: #fff;
+		text-align: center;
+		font-family: Avenir;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.blog__btn--readMore {
+			height: 1px;
+			width: 1px;
+			position: absolute;
+			margin: -1px;
+			padding: 0;
+			border: 0;
+			clip: rect(0 0 0 0);
+			overflow: hidden;
+		}
+	}
 </style>
 
 <script>
-    const btnReedMoreRef = document.querySelector(".blog__btn--readMore");
-    const blogWrapperRef = document.querySelector(".blog__wrapper");
+	const btnReedMoreRef = document.querySelector(".blog__btn--readMore") as HTMLButtonElement;
+	const blogWrapperRef = document.querySelector(".blog__wrapper") as HTMLDivElement;
 
-    const onReedMoreBtnClick = (e: Event) => {
-        btnReedMoreRef.classList.add("is-hidden");
-        blogWrapperRef.style.height = 'auto';
-    }
+	const onReedMoreBtnClick = (e: Event) => {
+		btnReedMoreRef.classList.add("is-hidden");
+		blogWrapperRef.style.height = "auto";
+	};
 
-    btnReedMoreRef.addEventListener("click", onReedMoreBtnClick);
+	btnReedMoreRef.addEventListener("click", onReedMoreBtnClick);
 </script>

@@ -4,9 +4,41 @@ import ProductHuntLink from "../common/ProductHuntLink.astro";
 ---
 
 <footer class="footer">
-	<div class="footer__socialWrap">
-		<div class="only-desktop">
-			<ul class="footer__socialLinksList">
+	<div class="footer__container">
+		<div class="footer__socialWrap">
+			<div class="only-desktop">
+				<ul class="footer__socialLinksList">
+					<li>
+						<a class="footer__link link--twitter" href="https://www.twitter.com" target="_blank"></a>
+					</li>
+					<li>
+						<a class="footer__link link--inst" href="https://www.instagram.com" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="footer__socialBtnList">
+				<li class="footer__socialBtnItem">
+					<a
+						class="footer__phBtn only-mobile"
+						href="https://www.producthunt.com/"
+						target="_blank"
+						rel="noreferrer noopener"
+						aria-label="product hunt"
+					>
+						<div class="only-desktop">
+							<ProductHuntLink />
+						</div>
+					</a>
+					<li class="footer__socialBtnItem">
+						<AppStore className="appstore-white" />
+					</li>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__copyrightBlock">
+			<p class="footer__copyright">&#169; 2023, Kitchen Gnome</p>
+			<ul class="footer__socialLinksList only-mobile">
 				<li>
 					<a class="footer__link link--twitter" href="https://www.twitter.com" target="_blank"></a>
 				</li>
@@ -15,143 +47,121 @@ import ProductHuntLink from "../common/ProductHuntLink.astro";
 				</li>
 			</ul>
 		</div>
-
-		<ul class="footer__socialBtnList">
-			<li class="footer__socialBtnItem">
-				<a
-					class="footer__phBtn only-mobile"
-					href="https://www.producthunt.com/"
-					target="_blank"
-					rel="noreferrer noopener"
-					aria-label="product hunt"
-				>
-					<div class="only-desktop">
-						<ProductHuntLink />
-					</div>
-				</a>
-				<li class="footer__socialBtnItem">
-					<AppStore className="appstore-white" />
-				</li>
-			</li>
-		</ul>
 	</div>
-	<div class="footer__copyrightBlock">
-		<p class="footer__copyright">&#169; 2023, Kitchen Gnome</p>
-		<ul class="footer__socialLinksList only-mobile">
-			<li>
-				<a class="footer__link link--twitter" href="https://www.twitter.com" target="_blank"></a>
-			</li>
-			<li>
-				<a class="footer__link link--inst" href="https://www.instagram.com" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<style>
-		.footer {
-			display: flex;
-			flex-direction: column;
-			gap: 41px;
-			padding: 0px 20px 36px;
-			background-color: #040404;
-		}
-
-		@media screen and (min-width: 1440px) {
-			.footer {
-				padding: 0 72px 56px 64px;
-				justify-content: space-between;
-				flex-direction: row-reverse;
-				gap: 0;
-			}
-		}
-
-		@media screen and (min-width: 1440px) {
-			.footer__socialWrap {
-				width: 100%;
-				display: flex;
-				flex-direction: row-reverse;
-				align-items: center;
-				gap: 81px;
-			}
-		}
-
-		.footer__socialBtnList {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 24px;
-		}
-
-		@media screen and (min-width: 1440px) {
-			.footer__socialBtnList {
-				gap: 16px;
-			}
-		}
-
-		.footer__socialBtnItem {
-			display: flex;
-		}
-
-		.footer__phBtn {
-			display: inline-block;
-			cursor: pointer;
-			width: 142px;
-			height: 48px;
-			border-radius: 6px;
-			background-image: url("/icons/ph-mob.svg");
-			background-size: contain;
-			background-position: center center;
-			background-repeat: no-repeat;
-		}
-
-		.footer__copyrightBlock {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		.footer__copyright {
-			color: #fff;
-			font-family: Avenir;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 140%;
-			min-width: 175px;
-		}
-
-		@media screen and (min-width: 1440px) {
-			.footer__copyright {
-				font-size: 16px;
-			}
-		}
-
-		.footer__socialLinksList {
-			display: flex;
-			align-items: center;
-			gap: 20px;
-		}
-
-		.footer__socialLinksList {
-			display: flex;
-			align-items: center;
-			gap: 20px;
-		}
-
-		.footer__link {
-			display: block;
-			width: 20px;
-			height: 20px;
-			background-size: auto;
-			background-position: center center;
-			background-repeat: no-repeat;
-		}
-
-		.link--twitter {
-			background-image: url("/icons/twitter.svg");
-		}
-
-		.link--inst {
-			background-image: url("/icons/instagram.svg");
-		}
-	</style>
 </footer>
+<style>
+	.footer {
+		width: 100%;
+		background-color: #040404;
+	}
+
+	.footer__container {
+		width: calc(375px - 40px);
+		display: flex;
+		flex-direction: column;
+		gap: 41px;
+		padding: 0px 20px 36px;
+		background-color: #040404;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.footer__container {
+			width: calc(1440px - 72px - 64px);
+			padding: 0 72px 56px 64px;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			gap: 0;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.footer__socialWrap {
+			width: 100%;
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			gap: 81px;
+		}
+	}
+
+	.footer__socialBtnList {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.footer__socialBtnList {
+			gap: 16px;
+		}
+	}
+
+	.footer__socialBtnItem {
+		display: flex;
+	}
+
+	.footer__phBtn {
+		display: inline-block;
+		cursor: pointer;
+		width: 142px;
+		height: 48px;
+		border-radius: 6px;
+		background-image: url("/icons/ph-mob.svg");
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.footer__copyrightBlock {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer__copyright {
+		color: #fff;
+		font-family: Avenir;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 140%;
+		min-width: 175px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.footer__copyright {
+			font-size: 16px;
+		}
+	}
+
+	.footer__socialLinksList {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.footer__socialLinksList {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.footer__link {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-size: auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.link--twitter {
+		background-image: url("/icons/twitter.svg");
+	}
+
+	.link--inst {
+		background-image: url("/icons/instagram.svg");
+	}
+</style>

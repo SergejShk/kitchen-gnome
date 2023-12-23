@@ -1,10 +1,17 @@
 .feedbacksSection {
+	width: 100%;
 	background-color: #040404;
+}
+
+.feedbacksContainer {
+	width: calc(375px - 20px);
 	padding: 48px 0 94px 20px;
+	margin: 0 auto;
 }
 
 @media screen and (min-width: 1440px) {
-	.feedbacksSection {
+	.feedbacksContainer {
+		width: calc(1440px - 64px);
 		padding: 100px 0 92px 64px;
 	}
 }

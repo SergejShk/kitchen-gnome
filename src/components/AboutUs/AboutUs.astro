@@ -4,43 +4,52 @@ import Decor from "../common/Decor.astro";
 ---
 
 <section class="about--section" id="about-us">
-	<picture>
-		<source
-			srcset="/images/about/about-desk-1x.jpg 1x,
+	<div class="about__container">
+		<picture>
+			<source
+				srcset="/images/about/about-desk-1x.jpg 1x,
                         /images/about/about-desk-2x.jpg 2x"
-			media="(min-width: 1440px)"
-		/>
-		<source
-			srcset="/images/about/about-mob-1x.jpg 1x,
+				media="(min-width: 1440px)"
+			/>
+			<source
+				srcset="/images/about/about-mob-1x.jpg 1x,
                         /images/about/about-mob-2x.jpg 2x"
-			media="(max-width: 1439px)"
-		/>
-		<img class="about__image" loading="lazy" src="/images/about/about-mob-1x.jpg" alt="About image" />
-	</picture>
+				media="(max-width: 1439px)"
+			/>
+			<img class="about__image" loading="lazy" src="/images/about/about-mob-1x.jpg" alt="About image" />
+		</picture>
 
-	<div class="about__descriptionBlock">
-		<Decor />
-		<h2 class="about__title">About us</h2>
-		<p class="about__description">
-			Your AI-powered kitchen companion. Simplify management, track inventory, and discover recipes from your
-			ingredients. Digitalize shopping lists, ensure food safety, and enjoy real-time updates. Personalized
-			and always evolving for a seamless culinary experience.
-		</p>
-		<AppStore className="appstore-white" />
+		<div class="about__descriptionBlock">
+			<Decor />
+			<h2 class="about__title">About us</h2>
+			<p class="about__description">
+				Your AI-powered kitchen companion. Simplify management, track inventory, and discover recipes from
+				your ingredients. Digitalize shopping lists, ensure food safety, and enjoy real-time updates.
+				Personalized and always evolving for a seamless culinary experience.
+			</p>
+			<AppStore className="appstore-white" />
+		</div>
 	</div>
 </section>
 
 <style>
 	.about--section {
+		width: 100%;
+		background-color: #040404;
+	}
+
+	.about__container {
+		width: 375px;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		overflow: hidden;
 	}
 
 	@media screen and (min-width: 1440px) {
-		.about--section {
+		.about__container {
+			width: 1440px;
 			flex-direction: row-reverse;
 			height: 800px;
 		}
