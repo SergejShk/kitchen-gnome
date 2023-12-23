@@ -1,4 +1,5 @@
 ---
+import AppStore from "../common/AppStore.astro";
 import Decor from "../common/Decor.astro";
 ---
 
@@ -25,16 +26,10 @@ import Decor from "../common/Decor.astro";
 			ingredients. Digitalize shopping lists, ensure food safety, and enjoy real-time updates. Personalized
 			and always evolving for a seamless culinary experience.
 		</p>
-		<a
-			class="about--appstore"
-			href="https://www.apple.com/app-store/"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="appstore"
-		>
-		</a>
+		<AppStore className="appstore-white" />
 	</div>
 </section>
+
 <style>
 	.about--section {
 		display: flex;
@@ -111,23 +106,6 @@ import Decor from "../common/Decor.astro";
 		.about__description {
 			font-size: 20px;
 			margin: 0 0 48px;
-		}
-	}
-
-	.about--appstore {
-		width: 143px;
-		height: 48px;
-		border-radius: 6px;
-		background-image: url("/icons/appstore-white.svg");
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-	}
-
-	@media screen and (min-width: 1440px) {
-		.about--appstore {
-			width: 204px;
-			height: 52px;
 		}
 	}
 </style>

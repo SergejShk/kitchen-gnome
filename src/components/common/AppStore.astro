@@ -1,0 +1,50 @@
+---
+interface IProps {
+	className?: "appstore-white";
+}
+
+const { className = "" } = Astro.props as IProps;
+---
+
+<a
+	class={`appstore ${className}`}
+	href="https://www.apple.com/app-store/"
+	target="_blank"
+	rel="noreferrer noopener"
+	aria-label="appstore"
+>
+</a>
+<style>
+	.appstore {
+		display: inline-block;
+		width: 180px;
+		height: 48px;
+		border-radius: 6px;
+		background-image: url("/icons/appstore-bl-mob.svg");
+		background-size: auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	@media screen and (min-width: 1440px) {
+		.appstore {
+			width: 205px;
+			height: 52px;
+			background-image: url("/icons/appstore-bl-desk.svg");
+		}
+	}
+
+	.appstore-white {
+		width: 142.8px;
+		height: 48px;
+		background-image: url("/icons/appstore-wh-mob.svg");
+	}
+
+	@media screen and (min-width: 1440px) {
+		.appstore-white {
+			width: 204px;
+			height: 52px;
+			background-image: url("/icons/appstore-wh-desk.svg");
+		}
+	}
+</style>
