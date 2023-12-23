@@ -10,6 +10,7 @@
 }
 
 .featuresImgContainer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -30,7 +31,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 34px 0 0;
+	margin: 25px 0 0;
 	height: 8px;
 	--swiper-pagination-color: #fff;
 	--swiper-pagination-bullet-inactive-color: #fff;
@@ -147,5 +148,21 @@
 @media screen and (min-width: 1440px) {
 	.iconDescription {
 		margin-top: 5px;
+	}
+}
+
+.swiperHidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 375px;
+	height: 540px;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 1440px) {
+	.swiperHidden {
+		width: 705px;
+		height: 800px;
 	}
 }
