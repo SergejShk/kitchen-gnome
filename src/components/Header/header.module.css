@@ -7,11 +7,21 @@
 	transform: translateX(-50%);
 	width: 100vw;
 	background-color: #fff;
-	display: flex;
-	justify-content: center;
+	min-height: 70px;
+}
+
+@media screen and (min-width: 1440px) {
+	.header {
+		min-height: 110px;
+	}
 }
 
 .headerContainer {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 999;
+	transform: translateX(-50%);
 	width: calc(375px - 41px);
 	background-color: #fff;
 	display: flex;
