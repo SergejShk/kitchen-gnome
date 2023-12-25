@@ -4,13 +4,8 @@
 	left: 50%;
 	transform: translateX(-50%) translateY(-12%);
 	z-index: 10;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	width: 100vw;
 	background-color: #fff;
-	width: 375px;
-	height: 591px;
-	margin: 0 auto;
 	transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -20,14 +15,18 @@
 	left: 50%;
 	transform: translateX(-50%) translateY(100%);
 	z-index: 10;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	width: 100vw;
 	background-color: #fff;
+	transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
 	width: 375px;
 	height: 591px;
 	margin: 0 auto;
-	transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .navList {

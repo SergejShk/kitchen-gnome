@@ -27,15 +27,17 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: IProps) => {
 
 	return (
 		<div className={isMenuOpen ? s.isMobileMenuOpen : s.mobileMenu}>
-			<ul className={s.navList}>
-				{navItems.map((item) => (
-					<li key={item.link}>
-						<a className={s.navLink} href={item.link} onClick={(e) => onNavClick(e, item.link)}>
-							{item.name}
-						</a>
-					</li>
-				))}
-			</ul>
+			<div className={s.container}>
+				<ul className={s.navList}>
+					{navItems.map((item) => (
+						<li key={item.link}>
+							<a className={s.navLink} href={item.link} onClick={(e) => onNavClick(e, item.link)}>
+								{item.name}
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 };
