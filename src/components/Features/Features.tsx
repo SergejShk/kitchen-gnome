@@ -62,13 +62,13 @@ const Features = () => {
 								<img src="/images/features/features.jpg" alt="features" />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src="/images/features/meal-plan.jpg" alt="meal plan" />
+								<img src="/images/features/meal-plan.png" alt="meal plan" />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src="/images/features/shopping-list.jpg" alt="shopping list" />
+								<img src="/images/features/shopping-list.png" alt="shopping list" />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src="/images/features/smart-fridge.jpg" alt="smart fridge" />
+								<img src="/images/features/smart-fridge.png" alt="smart fridge" />
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src="/images/features/recipe-discovery.jpg" alt="recipe discovery" />
