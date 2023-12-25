@@ -49,7 +49,6 @@ const Features = () => {
 						<SwiperSlide></SwiperSlide>
 						<SwiperSlide></SwiperSlide>
 						<SwiperSlide></SwiperSlide>
-						<SwiperSlide></SwiperSlide>
 					</Swiper>
 
 					<div className={s.featuresImgBox}>
@@ -62,9 +61,6 @@ const Features = () => {
 							thumbs={{ swiper: descriptionSwiper }}
 						>
 							<SwiperSlide>
-								<img src="/images/features/features.jpg" alt="features" />
-							</SwiperSlide>
-							<SwiperSlide>
 								<img src="/images/features/meal-plan.png" alt="meal plan" />
 							</SwiperSlide>
 							<SwiperSlide>
@@ -74,7 +70,7 @@ const Features = () => {
 								<img src="/images/features/smart-fridge.png" alt="smart fridge" />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src="/images/features/recipe-discovery.jpg" alt="recipe discovery" />
+								<img src="/images/features/recipe-discovery.png" alt="recipe discovery" />
 							</SwiperSlide>
 						</Swiper>
 					</div>
@@ -86,23 +82,6 @@ const Features = () => {
 				<div className={s.featuresDescriptionContainer}>
 					<div className={s.featuresDecor}></div>
 					<Swiper onSwiper={setDescriptionSwiper} modules={[Thumbs]} speed={0} allowTouchMove={false}>
-						<SwiperSlide>
-							<h2 className={s.featuresTitle}>Features</h2>
-							<ul className={s.descriptionList}>
-								{featureDescriptions.features.map((text, index) => (
-									<li key={index} className={s.descriptionItem}>
-										<img
-											className={s.iconDescription}
-											src="/icons/broccoli.svg"
-											alt="broccoli"
-											width="16px"
-											height="22px"
-										/>
-										<p>{text}</p>
-									</li>
-								))}
-							</ul>
-						</SwiperSlide>
 						<SwiperSlide>
 							<h2 className={s.featuresTitle}>Meal Plans</h2>
 							<ul className={s.descriptionList}>

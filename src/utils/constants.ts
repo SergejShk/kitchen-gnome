@@ -22,12 +22,6 @@ export const navItems = [
 ];
 
 export const featureDescriptions = {
-	features: [
-		"A diverse range of recipes for all skill levels ",
-		"Plan your  meals effortlessly with just a few taps",
-		"Easily swap ingredients based on what you have available",
-		"Watch expert chefs in action with high-quality video tutorials",
-	],
 	mealPlans: [
 		"Wizard-Assisted Planning: Use our intuitive wizard to effortlessly generate personalized meal plans.",
 		"Simplified Planning Process: Specify meal choices and duration to receive a personalized meal schedule.",
