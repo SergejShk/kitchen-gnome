@@ -1,12 +1,12 @@
 <form class="contact__form">
 	<label for="name" class="contact__label">
 		<span>Name</span>
-		<input type="text" class="contact__input" name="name" id="name" />
+		<input type="text" class="contact__input" name="name" id="name" autocomplete="true" />
 	</label>
 
 	<label for="email" class="contact__label">
 		<span>Email</span>
-		<input type="email" class="contact__input" name="email" id="email" />
+		<input type="email" class="contact__input" name="email" id="email" autocomplete="true" />
 	</label>
 
 	<label for="message" class="contact__label">
@@ -129,7 +129,7 @@
 <script>
 	const formRef = document.querySelector(".contact__form") as HTMLFormElement;
 
-	const onFormSubmit = (e) => {
+	const onFormSubmit = (e: any) => {
 		e.preventDefault();
 
 		const form = e?.currentTarget;

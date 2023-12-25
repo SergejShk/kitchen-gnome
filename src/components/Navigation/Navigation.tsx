@@ -21,7 +21,7 @@ const Navigation = () => {
 	return (
 		<ul className={s.navList}>
 			{navItems.map((item) => (
-				<li>
+				<li key={item.link}>
 					<a className={s.navLink} href={item.link} onClick={(e) => onNavClick(e, item.link)}>
 						{item.name}
 					</a>

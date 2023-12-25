@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Controller, Pagination, Thumbs } from "swiper/modules";
+import { Controller, Pagination, Thumbs, Keyboard, Mousewheel } from "swiper/modules";
 
 import { featureDescriptions } from "../../utils/constants";
 
@@ -19,12 +19,29 @@ const Features = () => {
 			<div className={s.featuresImgMainContainer}>
 				<div className={s.featuresImgContainer}>
 					<Swiper
-						modules={[Controller, Pagination]}
+						modules={[Controller, Pagination, Keyboard, Mousewheel]}
 						onSwiper={setHiddenSwiper}
 						controller={{ control: imgSwiper }}
 						grabCursor
-						loop
-						className={s.swiperHidden}
+						touchRatio={5}
+						className={`test-class ${s.swiperHidden}`}
+						pagination={{
+							el: ".swiper-paginations",
+							clickable: true,
+						}}
+						// direction="vertical"
+						// observer={true}
+						// observeParents={true}
+						keyboard={{
+							enabled: true,
+							onlyInViewport: true,
+							pageUpDown: true,
+						}}
+						mousewheel={{
+							sensitivity: 1,
+							forceToAxis: true,
+							releaseOnEdges: true,
+						}}
 					>
 						<SwiperSlide></SwiperSlide>
 						<SwiperSlide></SwiperSlide>
@@ -32,16 +49,12 @@ const Features = () => {
 						<SwiperSlide></SwiperSlide>
 						<SwiperSlide></SwiperSlide>
 					</Swiper>
+
 					<div className={s.featuresImgBox}>
 						<Swiper
-							modules={[Controller, Pagination, Thumbs]}
+							modules={[Controller, Thumbs]}
 							onSwiper={setImgSwiper}
 							controller={{ control: hiddenSwiper }}
-							pagination={{
-								el: ".swiper-paginations",
-								clickable: true,
-							}}
-							loop
 							grabCursor
 							className={s.swiperImgs}
 							thumbs={{ swiper: descriptionSwiper }}
@@ -70,14 +83,7 @@ const Features = () => {
 			<div className={s.featuresDescriptionMainContainer}>
 				<div className={s.featuresDescriptionContainer}>
 					<div className={s.featuresDecor}></div>
-					<Swiper
-						onSwiper={setDescriptionSwiper}
-						modules={[Thumbs]}
-						loop
-						watchSlidesProgress
-						speed={0}
-						className="swiper-no-swiping"
-					>
+					<Swiper onSwiper={setDescriptionSwiper} modules={[Thumbs]} speed={0} className="swiper-no-swiping">
 						<SwiperSlide>
 							<h2 className={s.featuresTitle}>Features</h2>
 							<ul className={s.descriptionList}>

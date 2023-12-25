@@ -27,7 +27,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 41px 0 16px;
+	padding: 41px 0 49px;
 	width: 375px;
 	margin: 0 auto;
 }
@@ -35,27 +35,30 @@
 @media screen and (min-width: 1440px) {
 	.featuresImgContainer {
 		width: 705px;
-		padding: 58px 0 26px;
+		padding: 58px 0 59px;
 		margin: 0 0 0 auto;
 	}
 }
 
 .swiperPaginations {
+	position: absolute;
+	z-index: 101;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 25px 0 0;
 	height: 8px;
 	--swiper-pagination-color: #fff;
 	--swiper-pagination-bullet-inactive-color: #fff;
 	--swiper-pagination-bullet-inactive-opacity: 0.4;
 	--swiper-pagination-bullet-size: 8px;
 	--swiper-pagination-bullet-horizontal-gap: 5px;
+	--swiper-pagination-bottom: 16px;
 }
 
 @media screen and (min-width: 1440px) {
 	.swiperPaginations {
 		margin: 26px 0 0;
+		--swiper-pagination-bottom: 26px;
 	}
 }
 
@@ -181,15 +184,16 @@
 .swiperHidden {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
+	left: 50%;
+	z-index: 100;
+	transform: translateX(-50%);
+	width: 100vw;
 	height: 540px;
 	background-color: transparent;
 }
 
 @media screen and (min-width: 1440px) {
 	.swiperHidden {
-		width: 705px;
 		height: 800px;
 	}
 }
