@@ -24,12 +24,11 @@ const Features = () => {
 						controller={{ control: imgSwiper }}
 						grabCursor
 						touchRatio={5}
-						className={`test-class ${s.swiperHidden}`}
+						className={`${s.swiperHidden}`}
 						pagination={{
 							el: ".swiper-paginations",
 							clickable: true,
 						}}
-						// direction="vertical"
 						// observer={true}
 						// observeParents={true}
 						keyboard={{
@@ -39,7 +38,7 @@ const Features = () => {
 						}}
 						mousewheel={{
 							sensitivity: 1,
-							forceToAxis: true,
+							forceToAxis: false,
 							releaseOnEdges: true,
 						}}
 					>
@@ -83,7 +82,7 @@ const Features = () => {
 			<div className={s.featuresDescriptionMainContainer}>
 				<div className={s.featuresDescriptionContainer}>
 					<div className={s.featuresDecor}></div>
-					<Swiper onSwiper={setDescriptionSwiper} modules={[Thumbs]} speed={0} className="swiper-no-swiping">
+					<Swiper onSwiper={setDescriptionSwiper} modules={[Thumbs]} speed={0} allowTouchMove={false}>
 						<SwiperSlide>
 							<h2 className={s.featuresTitle}>Features</h2>
 							<ul className={s.descriptionList}>
