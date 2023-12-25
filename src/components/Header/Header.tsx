@@ -15,6 +15,8 @@ const Header: FC = () => {
 	const onLogoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
 		e.preventDefault();
 
+		setIsMenuOpen(false);
+
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
