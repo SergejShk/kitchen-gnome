@@ -23,7 +23,6 @@ const Features = () => {
 						onSwiper={setHiddenSwiper}
 						controller={{ control: imgSwiper }}
 						grabCursor
-						touchRatio={5}
 						className={`${s.swiperHidden}`}
 						pagination={{
 							el: ".swiper-paginations",
@@ -40,6 +39,10 @@ const Features = () => {
 							sensitivity: 1,
 							forceToAxis: false,
 							releaseOnEdges: true,
+						}}
+						breakpoints={{
+							375: { touchRatio: 2 },
+							1440: { touchRatio: 5 },
 						}}
 					>
 						<SwiperSlide></SwiperSlide>
