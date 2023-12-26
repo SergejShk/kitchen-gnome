@@ -1,4 +1,5 @@
 .feedbacksSection {
+	position: relative;
 	width: 100%;
 	background-color: #040404;
 }
@@ -40,16 +41,24 @@
 }
 
 .swiperPaginations {
+	position: absolute;
+	z-index: 999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 24px 0 0 -10px;
+	margin: 24px 0 0 0;
 	height: 8px;
 	--swiper-pagination-color: #fff;
 	--swiper-pagination-bullet-inactive-color: #fff;
 	--swiper-pagination-bullet-inactive-opacity: 0.4;
 	--swiper-pagination-bullet-size: 8px;
 	--swiper-pagination-bullet-horizontal-gap: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+	.swiperPaginations {
+		margin: 0 0 51px;
+	}
 }
 
 .card {
@@ -136,5 +145,22 @@
 	.imgRate {
 		width: 20px;
 		height: 20px;
+	}
+}
+
+.swiperHidden {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 100;
+	transform: translateX(-50%);
+	width: 100vw;
+	height: 708px;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 1440px) {
+	.swiperHidden {
+		height: 788px;
 	}
 }
