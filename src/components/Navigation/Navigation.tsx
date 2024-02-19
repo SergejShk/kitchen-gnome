@@ -8,7 +8,7 @@ const Navigation = () => {
 		const id = link.replace("#", "");
 		const scrollTo = document.getElementById(id)?.offsetTop;
 		const screenWidth = window.innerWidth;
-		const headerWidth = screenWidth < 1440 ? 70 : 145;
+		const headerWidth = screenWidth < 1440 ? 70 : 110;
 
 		if (!scrollTo) return;
 
